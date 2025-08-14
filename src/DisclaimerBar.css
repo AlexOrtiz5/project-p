@@ -1,0 +1,16 @@
+.disclaimer-bar {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-top: 1px solid #e9ecef;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box; /* Important for full width */
+}
+
+.disclaimer-bar p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
