@@ -1,26 +1,14 @@
 .proxy-page {
+  padding-bottom: 80px; /* Leave space for the fixed disclaimer bar */
+}
+
+.description-box {
+  background-color: #f1f1f1;
+  border-radius: 8px;
   padding: 20px;
-  text-align: center;
-}
-
-.proxy-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.proxy-header h1 {
-  flex-grow: 1;
-}
-
-.back-button {
-  padding: 10px 20px;
-  background-color: #6c757d;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: left;
 }
 
 .content-section {

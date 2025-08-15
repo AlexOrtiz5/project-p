@@ -1,0 +1,85 @@
+.home-page {
+  min-height: 100vh;
+  text-align: center;
+}
+
+.description-box {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.main-buttons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  grid-template-rows: auto auto; /* Two rows */
+  gap: 20px; /* Space between grid items */
+  margin-bottom: 20px;
+}
+
+.yugioh-button, .magic-button, .links-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.yugioh-button:hover, .magic-button:hover, .links-button:hover {
+  background-color: #0056b3;
+}
+
+/* Specific button placement using grid properties */
+.yugioh-button {
+  grid-column: 1 / 2; /* Spans the first column */
+  grid-row: 1 / 2; /* Sits in the first row */
+}
+
+.magic-button {
+  grid-column: 2 / 3; /* Spans the second column */
+  grid-row: 1 / 2; /* Sits in the first row */
+}
+
+.links-button {
+  grid-column: 2 / 3; /* Spans the second column */
+  grid-row: 2 / 3; /* Sits in the second row */
+}
+
+.blank-space {
+  grid-column: 1 / 2; /* Spans the first column */
+  grid-row: 2 / 3; /* Sits in the second row */
+}
+
+.submission-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.submit-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
