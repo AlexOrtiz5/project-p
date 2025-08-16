@@ -1,5 +1,5 @@
 .header-bar {
-  background-color: #f8f9fa;
+  background-color: #f8f9fa; /* Light background for the header bar */
   padding: 20px;
   border-bottom: 1px solid #e9ecef;
   width: 100%;
@@ -11,8 +11,8 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  max-width: 1200px; /* Limit the header content width */
-  margin: 0 auto; /* Center the header content */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .header-bar h1 {
@@ -23,9 +23,9 @@
 
 .back-button {
   position: absolute;
-  left: 0; /* Position relative to the parent header, which is now centered */
+  left: 0;
   padding: 10px 20px;
-  background-color: #6c757d;
+  background-color: #6a0dad; /* Purple back button */
   color: white;
   border: none;
   border-radius: 5px;

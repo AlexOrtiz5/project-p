@@ -3,4 +3,7 @@ body, #root, .App {
   padding: 0;
   width: 100%;
   min-height: 100vh;
+  background-color: #1a1a1a; /* Dark, off-black background */
+  color: #ffffff; /* White text for contrast */
+  font-family: Arial, sans-serif;
 }

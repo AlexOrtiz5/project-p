@@ -11,6 +11,11 @@ const externalLinks = [
     url: 'https://edhrec.com/'
   },
   {
+    name: 'YGOProDeck',
+    description: 'A comprehensive resource for Yu-Gi-Oh! deck building, card database, and tournament information.',
+    url: 'https://ygoprodeck.com/'
+  },
+  {
     name: 'EDH Power Level',
     description: 'A tool to help you estimate the power level of your Commander deck based on its card choices and strategy.',
     url: 'https://edhpowerlevel.com/'
