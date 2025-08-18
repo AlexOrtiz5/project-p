@@ -6,12 +6,15 @@
 
 # Technologies 
   List with used technologies:
-  - React + Vite
-  - Javascript
-  - CSS
+  - React: Used for building the user interface, managing components, and handling state (e.g., toggling collapsible sections).
+  - Vite: The build tool that provides a fast development environment and bundles your code for production.
+  - JavaScript: The core programming language used for all the logic, including the text formatter and API calls.
+  - CSS: Used for all styling, including the layout, colors, and the animations for the collapsible sections and buttons.
+  - HTML: The foundational markup language for structuring the content of your pages.
+  - Node.js & npm: The environment and package manager used to run your project and install necessary dependencies.
 
 # Project Description
   Paragraph with a description of the dataset, sources, characteristics ,etc.
   
 # Contact
-  linkedin, github, medium, etc 
+  linkedin, github, etc 
