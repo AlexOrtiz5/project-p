@@ -6,6 +6,16 @@ import './LinksPage.css';
 // Data for external links, updated for Commander (EDH)
 const externalLinks = [
   {
+    name: 'Yu-Gi-Oh! Card Database',
+    description: 'The official Yu-Gi-Oh! card database, for looking up card information and rulings.',
+    url: 'https://www.db.yugioh-card.com/yugiohdb/'
+  },
+  {
+    name: 'Magic: The Gathering Gatherer',
+    description: 'The official Magic: The Gathering card database, for looking up card information.',
+    url: 'https://gatherer.wizards.com/'
+  },
+  {
     name: 'EDHREC',
     description: 'A comprehensive database for Magic: The Gathering Commander (EDH) deck building, showing popular card choices and synergies.',
     url: 'https://edhrec.com/'

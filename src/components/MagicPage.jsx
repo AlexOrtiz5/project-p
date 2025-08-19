@@ -36,6 +36,14 @@ const proxyImages = [
   }
 ];
 
+const customCardLinks = [
+  {
+    title: 'Mtgcardsmith',
+    description: 'An online custom card maker to create and download your own unique Magic cards.',
+    url: 'https://mtgcardsmith.com/'
+  }
+];
+
 const MagicPage = ({ setCurrentPage }) => {
   const [isContentVisible, setIsContentVisible] = useState(false);
   const [isFormatterVisible, setIsFormatterVisible] = useState(false);
@@ -57,13 +65,11 @@ const MagicPage = ({ setCurrentPage }) => {
         let trimmedLine = line.trim();
         if (trimmedLine === '') return null;
 
-        // Condition 2: Remove 'x' or 'X' and ensure a space
         const noXMatch = trimmedLine.match(/^(\d+)\s*[xX]\s*(.*)$/);
         if (noXMatch) {
           trimmedLine = `${noXMatch[1]} ${noXMatch[2]}`;
         }
         
-        // New Condition: Handle set code and number with the updated regex
         const setMatch = trimmedLine.match(/^(\d+\s+.*?)\s+([A-Z0-9]{3,4})[\s/]+(\d+)$/);
         if (setMatch) {
           const countAndName = setMatch[1].trim();
@@ -72,7 +78,6 @@ const MagicPage = ({ setCurrentPage }) => {
           return `${countAndName} (${setCode}) ${collectorNumber}`;
         }
 
-        // Condition 1: Add "1" if no number is present
         const startsWithNumber = /^\d+\s/.test(trimmedLine);
         if (!startsWithNumber) {
           return `1 ${trimmedLine}`;
@@ -169,6 +174,27 @@ Counterspell
         </div>
       </div>
       
+      {/* New section for custom cards */}
+      <div className="description-box custom-cards-box">
+        <p>
+          To create and print custom cards, you'll need to download the generated card images. You can then manage and print them from your local files.
+        </p>
+      </div>
+
+      <div className="links-container">
+        {customCardLinks.map((link, index) => (
+          <div className="index-card" key={index}>
+            <div className="link-description">
+              <h3>{link.title}</h3>
+              <p>{link.description}</p>
+            </div>
+            <a href={link.url} target="_blank" rel="noopener noreferrer" className="external-link-button">
+              Go to Link
+            </a>
+          </div>
+        ))}
+      </div>
+
       <DisclaimerBar />
     </div>
   );
