@@ -14,7 +14,7 @@
   - Node.js & npm: The environment and package manager used to run your project and install necessary dependencies.
 
 # Project Description
-  Paragraph with a description of the dataset, sources, characteristics ,etc.
+  This project revolves around a collection of semi-structured data points, sourced from both direct user input and a variety of predefined external resources. The core dataset is characterized by its inherent inconsistencies in formatting and structure. The primary objective was to develop a robust normalization process to parse, validate, and standardize this data. This includes transforming disparate input strings into a consistent format, while a secondary process integrates and displays related information from various external points of reference. The system's design ensures data integrity and presents it in a clean, organized manner for efficient user interaction.
   
 # Contact
   linkedin, github, etc 
