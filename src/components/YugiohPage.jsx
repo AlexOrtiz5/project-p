@@ -65,6 +65,11 @@ const YugiohPage = ({ setCurrentPage }) => {
         let trimmedLine = line.trim();
         if (trimmedLine === '') return null;
 
+        // New Condition: Remove lines starting with '#' or '!'
+        if (trimmedLine.startsWith('#') || trimmedLine.startsWith('!')) {
+          return null;
+        }
+
         // Condition: Remove 'x' or 'X'
         const noXMatch = trimmedLine.match(/^(\d+)\s*[xX]\s*(.*)$/);
         if (noXMatch) {
@@ -146,8 +151,10 @@ const YugiohPage = ({ setCurrentPage }) => {
                 onChange={(e) => setCardList(e.target.value)}
                 placeholder="Example:
 74677422
+#main
 2x Dark Magician
-Blue-Eyes White Dragon"
+Blue-Eyes White Dragon
+"
               ></textarea>
             </div>
             <button className="format-button" onClick={formatList}>
