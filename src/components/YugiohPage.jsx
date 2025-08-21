@@ -65,18 +65,15 @@ const YugiohPage = ({ setCurrentPage }) => {
         let trimmedLine = line.trim();
         if (trimmedLine === '') return null;
 
-        // New Condition: Remove lines starting with '#' or '!'
         if (trimmedLine.startsWith('#') || trimmedLine.startsWith('!')) {
           return null;
         }
 
-        // Condition: Remove 'x' or 'X'
         const noXMatch = trimmedLine.match(/^(\d+)\s*[xX]\s*(.*)$/);
         if (noXMatch) {
           trimmedLine = `${noXMatch[1]} ${noXMatch[2]}`;
         }
         
-        // Condition: Add "1" if no number is present
         const startsWithNumber = /^\d+\s/.test(trimmedLine);
         if (!startsWithNumber) {
           trimmedLine = `1 ${trimmedLine}`;
@@ -112,6 +109,29 @@ const YugiohPage = ({ setCurrentPage }) => {
             </a>
           </div>
         ))}
+      </div>
+
+      {/* New Section for Print Settings */}
+      <div className="print-settings-info">
+        <div className="print-settings-text">
+          <h3>Important Print Settings</h3>
+          <p>
+            To ensure your proxy cards are printed at the correct size, please adjust your printer settings as follows:
+          </p>
+          <ul>
+            <li><strong>Card Size Scale:</strong> Set to <strong>1.1</strong>.</li>
+            <li><strong>Margin Between Cards:</strong> Always <strong>0</strong> is recommended for having multiple cards per page.</li>
+            <li><strong>Margin Between first card and document border:</strong> Set to <strong>10</strong> for reducing space in the page.</li>
+            <li><strong>Paper Size:</strong> Use standard paper sizes such as <strong>Blank</strong> for the standard paper <strong>Letter (8.5 x 11 inches)</strong>.</li>
+          </ul>
+          <p>
+            These settings are crucial for the proxies to match the dimensions of real Yu-Gi-Oh! cards.
+          </p>
+        </div>
+        <div className="print-settings-image">
+          {/* Replace with the actual path to your image */}
+          <img src="./src/YugiohProxy/Yugioh-Settings.png" alt="Print Settings Example" className="settings-image" />
+        </div>
       </div>
 
       <div className="collapsible-container">
@@ -151,6 +171,7 @@ const YugiohPage = ({ setCurrentPage }) => {
                 onChange={(e) => setCardList(e.target.value)}
                 placeholder="Example:
 74677422
+#created by Dragonix
 #main
 2x Dark Magician
 Blue-Eyes White Dragon

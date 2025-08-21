@@ -197,3 +197,46 @@
 .format-button:hover {
   background-color: #218838;
 }
+
+.print-settings-info {
+ background-color: #f9f9f9;
+ border-radius: 8px;
+ padding: 20px;
+ margin: 20px auto;
+ max-width: 800px;
+ color: #333;
+ display: flex;
+ gap: 20px;
+ align-items: center;
+}
+
+
+.print-settings-text {
+ flex: 2;
+ text-align: left;
+}
+
+
+.print-settings-text h3 {
+ color: #0047ab;
+ margin-top: 0;
+}
+
+
+.print-settings-text ul {
+ padding-left: 20px;
+}
+
+
+.print-settings-image {
+ flex: 1;
+ text-align: center;
+}
+
+
+.settings-image {
+ max-width: 100%;
+ height: auto;
+ border-radius: 4px;
+ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}

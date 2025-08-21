@@ -115,6 +115,27 @@ const MagicPage = ({ setCurrentPage }) => {
         ))}
       </div>
 
+      <div className="print-settings-info">
+        <div className="print-settings-text">
+          <h3>Important Print Settings</h3>
+          <p>
+            To ensure your proxy cards are printed at the correct size, please adjust your printer settings as follows:
+          </p>
+          <ul>
+            <li><strong>Scale:</strong> Set to <strong>103%</strong>.</li>
+            <li><strong>Gap:</strong> Usually <strong>No Gap (Adjecent) </strong> is recommended for fitting multiple cards per page.</li>
+            <li><strong>Paper Size:</strong> Use standard paper sizes such as <strong>Letter (8.5 x 11 inches)</strong>.</li>
+          </ul>
+          <p>
+            These settings are crucial for the proxies to match the dimensions of real Magic: The Gathering cards.
+          </p>
+        </div>
+        <div className="print-settings-image">
+          {/* Replace with the actual path to your image */}
+          <img src="./src/MTGproxy/MTG-Settings.png" alt="Print Settings Example" className="settings-image" />
+        </div>
+      </div>
+
       <div className="collapsible-container">
         <button className="collapsible-header" onClick={toggleVisibility}>
           How the Webpage Works
@@ -174,7 +195,6 @@ Counterspell
         </div>
       </div>
       
-      {/* New section for custom cards */}
       <div className="description-box custom-cards-box">
         <p>
           To create and print custom cards, you'll need to download the generated card images. You can then manage and print them from your local files.
