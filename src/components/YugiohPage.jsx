@@ -111,7 +111,6 @@ const YugiohPage = ({ setCurrentPage }) => {
         ))}
       </div>
 
-      {/* New Section for Print Settings */}
       <div className="print-settings-info">
         <div className="print-settings-text">
           <h3>Important Print Settings</h3>
@@ -119,7 +118,7 @@ const YugiohPage = ({ setCurrentPage }) => {
             To ensure your proxy cards are printed at the correct size, please adjust your printer settings as follows:
           </p>
           <ul>
-            <li><strong>Card Size Scale:</strong> Set to <strong>1.1</strong>.</li>
+            <li><strong>Card Size Scale:</strong> Set to <strong>1.05</strong>.</li>
             <li><strong>Margin Between Cards:</strong> Always <strong>0</strong> is recommended for having multiple cards per page.</li>
             <li><strong>Margin Between first card and document border:</strong> Set to <strong>10</strong> for reducing space in the page.</li>
             <li><strong>Paper Size:</strong> Use standard paper sizes such as <strong>Blank</strong> for the standard paper <strong>Letter (8.5 x 11 inches)</strong>.</li>
@@ -130,8 +129,15 @@ const YugiohPage = ({ setCurrentPage }) => {
         </div>
         <div className="print-settings-image">
           {/* Replace with the actual path to your image */}
-          <img src="./src/YugiohProxy/Yugioh-Settings.png" alt="Print Settings Example" className="settings-image" />
+          <img src="../path/to/your/yugioh-print-settings-image.png" alt="Print Settings Example" className="settings-image" />
         </div>
+      </div>
+
+      {/* New section for deck exporting tip */}
+      <div className="description-box">
+        <p>
+          If you have deck-building software like YGOpro or IgnisProject, you can easily get your list. Simply make a deck and save the file, then copy and paste the contents into our text formatter to get your cards with your desired formatting.
+        </p>
       </div>
 
       <div className="collapsible-container">

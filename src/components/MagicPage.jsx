@@ -122,9 +122,9 @@ const MagicPage = ({ setCurrentPage }) => {
             To ensure your proxy cards are printed at the correct size, please adjust your printer settings as follows:
           </p>
           <ul>
-            <li><strong>Scale:</strong> Set to <strong>103%</strong>.</li>
-            <li><strong>Gap:</strong> Usually <strong>No Gap (Adjecent) </strong> is recommended for fitting multiple cards per page.</li>
-            <li><strong>Paper Size:</strong> Use standard paper sizes such as <strong>Letter (8.5 x 11 inches)</strong>.</li>
+            <li><strong>Scale:</strong> Set to <strong>100%</strong> or <strong>Actual Size</strong>.</li>
+            <li><strong>Orientation:</strong> Usually <strong>Landscape</strong> is recommended for printing multiple cards per page.</li>
+            <li><strong>Paper Size:</strong> Use standard paper sizes such as <strong>Letter (8.5 x 11 inches)</strong> or <strong>A4 (210 x 297 mm)</strong>.</li>
           </ul>
           <p>
             These settings are crucial for the proxies to match the dimensions of real Magic: The Gathering cards.
@@ -132,8 +132,15 @@ const MagicPage = ({ setCurrentPage }) => {
         </div>
         <div className="print-settings-image">
           {/* Replace with the actual path to your image */}
-          <img src="./src/MTGproxy/MTG-Settings.png" alt="Print Settings Example" className="settings-image" />
+          <img src="../path/to/your/print-settings-image.png" alt="Print Settings Example" className="settings-image" />
         </div>
+      </div>
+
+      {/* New section for deck exporting tip */}
+      <div className="description-box">
+        <p>
+          If you have a program like Xmage, you can easily get your deck list. After saving your deck, export it by choosing the option to copy it to the clipboard in <strong>MTG Arena's deck format</strong>. Then, paste the list into our text formatter.
+        </p>
       </div>
 
       <div className="collapsible-container">
