@@ -129,7 +129,7 @@ const YugiohPage = ({ setCurrentPage }) => {
         </div>
         <div className="print-settings-image">
           {/* Replace with the actual path to your image */}
-          <img src="../path/to/your/yugioh-print-settings-image.png" alt="Print Settings Example" className="settings-image" />
+          <img src="./src/YugiohProxy/Yugioh-Settings.png" alt="Print Settings Example" className="settings-image" />
         </div>
       </div>
 

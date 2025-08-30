@@ -132,7 +132,7 @@ const MagicPage = ({ setCurrentPage }) => {
         </div>
         <div className="print-settings-image">
           {/* Replace with the actual path to your image */}
-          <img src="../path/to/your/print-settings-image.png" alt="Print Settings Example" className="settings-image" />
+          <img src="./src/MTGproxy/MTG-Settings.png" alt="Print Settings Example" className="settings-image" />
         </div>
       </div>
 
